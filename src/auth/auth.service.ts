@@ -17,8 +17,9 @@ export class AuthService {
             data:{
                 email: dto.email,
                 hash,
-            }
-        })
+            },
+        });
+        delete user.hash;
         //return the saved user
         return user;
     }
